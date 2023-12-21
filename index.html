@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forever Begins Today</title>
 
-    <!-- Add Font Awesome CSS (you can replace this with your preferred method) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
 
@@ -55,10 +54,10 @@
             flex: 1;
             display: flex;
             justify-content: space-between;
-            align-items: center; /* Align items vertically in the center */
+            align-items: center; 
         }
         .button-1::before {
-            content: '\f04b'; /* Unicode character for the play icon in Font Awesome */
+            content: '\f04b'; 
             font-family: 'Font Awesome 5 Free';
             font-weight: 900;
             color: white;
@@ -69,7 +68,7 @@
             transform: translate(-50%, -50%);
         }
         .button-2::before {
-            content: '\f04b'; /* Unicode character for the play icon in Font Awesome */
+            content: '\f04b'; 
             font-family: 'Font Awesome 5 Free';
             font-weight: 900;
             color: white;
@@ -84,7 +83,7 @@
             flex: 1;
             background-size: cover;
             background-position: center;
-            height: 120px; /* Increase the height as needed */
+            height: 120px; 
             cursor: pointer;
             border-radius: 10px;
             overflow: hidden;
@@ -98,7 +97,7 @@
         .button-2 {
             flex: 1;
             background-size: cover;
-            height: 120px; /* Increase the height as needed */
+            height: 120px; 
             cursor: pointer;
             border-radius: 10px;
             overflow: hidden;
@@ -219,7 +218,6 @@
         &copy; 2023 Raghav Sharma
     </div>
 
-    <!-- Include Font Awesome JS (you can replace this with your preferred method) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
     <script>
         // Function to handle button press and redirect to Google
@@ -229,8 +227,6 @@
         function redirectToWeddingDay() {
             window.location.href = 'https://drive.google.com/file/d/1OW1RAvtpOscTQCnYeonXxljvwR3goP-Y/view?usp=drive_link';
         }
-
-        // Adding click event listener to the button
         document.getElementById('goToEngagement').addEventListener('click', redirectToEngagement);
         document.getElementById('goToWeddingDay').addEventListener('click', redirectToWeddingDay);
     </script>
