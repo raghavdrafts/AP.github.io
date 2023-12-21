@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever Begins Today</title>
+
+    <!-- Add Font Awesome CSS (you can replace this with your preferred method) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+
+    <style>
+        body {
+            margin-top: 20px;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .background-layer {
+            background: url('photos/background.jpg') center/cover no-repeat;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        header {
+            font-size: 24px;
+            font-family: 'Great Vibes', cursive;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            justify-content: space-between;
+            padding: 0 10px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+        }
+
+        .buttons-container {
+            padding-left: 25px;
+            flex: 1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Align items vertically in the center */
+        }
+
+        .button-1 {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+            height: 120px; /* Increase the height as needed */
+            cursor: pointer;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-right: 0;
+            max-width: calc(50% - 5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .button-2 {
+            flex: 1;
+            background-size: cover;
+            height: 120px; /* Increase the height as needed */
+            cursor: pointer;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-right: 0;
+            max-width: calc(50% - 5px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .icon {
+            font-size: 40px;
+            color: #fff;
+            position: absolute;
+        }
+
+        .links-container {
+            width: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 20px;
+        }
+
+        .link {
+            margin-top: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .link i {
+            font-size: 40px;
+            color: #333;
+        }
+
+        .video-container {
+            flex: 1.8;
+            border-radius: 10px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px;
+            position: relative;
+        }
+
+        .video {
+            width: 92%;
+            margin-left: 16px;
+            height: 90%;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                margin-top: 138px;
+            }
+
+            header {
+                font-size: 16px;
+                font-family: 'Great Vibes', cursive;
+                margin-top: 45px;
+            }
+
+            .container {
+                width: 95%;
+                padding-left: 15px;
+            }
+
+            .mainContainer {
+                transform: translateY(-90px);
+                position: relative;
+                z-index: 1;
+            }
+            .footer
+            {
+                margin-top: -16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="background-layer"></div>
+    <div class="mainContainer">
+        <header>
+            "Abhay & Palak: A Journey of Love and Togetherness"
+        </header>
+
+        <div class="container">
+            <div class="buttons-container">
+                <div id="goToEngagement" class="button-1" text="Button" style="background-image: url('photos/engagement.JPG');"></div>
+                <div id="goToWeddingDay" class="button-2" text="Button" onclick="" style="background-image: url('photos/wedding.JPG');"></div>
+            </div>
+
+            <div class="links-container">
+                <a href="https://drive.google.com/drive/folders/17Uu5R307ViTyQRfk3LbL76RfovJvfVsz?usp=drive_link" class="link">
+                    <i class="fas fa-camera"></i>
+                </a>
+                <a href="https://1drv.ms/f/c/6c32bbd5bf535b40/EvG122DrCYdAvTQqKRpL3NMBtG_gpE0qlJ18562KkoymOg?e=VIcq7c" onclick="" class="link">
+                    <i class="fas fa-camera"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="video-container">
+            <video class="video" controls>
+                <source src="videos/Ring Ceremony-Trailer.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2023 Raghav Sharma
+    </div>
+
+    <!-- Include Font Awesome JS (you can replace this with your preferred method) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"></script>
+    <script>
+        // Function to handle button press and redirect to Google
+        function redirectToEngagement() {
+            window.location.href = 'https://drive.google.com/file/d/1xc7jF-3rVTYaUK25qQWdvJfFyNixD9mg/view?usp=drive_link';
+        }
+        function redirectToWeddingDay() {
+            window.location.href = 'https://drive.google.com/file/d/1OW1RAvtpOscTQCnYeonXxljvwR3goP-Y/view?usp=drive_link';
+        }
+
+        // Adding click event listener to the button
+        document.getElementById('goToEngagement').addEventListener('click', redirectToEngagement);
+        document.getElementById('goToWeddingDay').addEventListener('click', redirectToWeddingDay);
+    </script>
+</body>
+
+</html>
